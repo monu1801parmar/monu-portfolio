@@ -39,7 +39,6 @@ export const Navbar = () => {
   </div>
 </nav>
 
-<h1>hnkjsgdfjhgushg</h1>
     </>
   )
 }
