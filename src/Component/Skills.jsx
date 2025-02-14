@@ -1,63 +1,46 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaDatabase } from "react-icons/fa";
-import { SiMongodb, SiTailwindcss, SiExpress } from "react-icons/si";
+import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs, FaGitAlt } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
 
-const Skills = () => {
+export const Skills = () => {
   return (
-    <section id="skills" className="py-16 bg-gray-900 text-white">
-      <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-8">Skills & Tech Stack</h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
-          
-          <div className="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
-            <FaHtml5 className="text-orange-500 text-4xl" />
-            <p className="mt-2 text-lg font-semibold">HTML</p>
-          </div>
-
-          <div className="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
-            <FaCss3Alt className="text-blue-500 text-4xl" />
-            <p className="mt-2 text-lg font-semibold">CSS</p>
-          </div>
-
-          <div className="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
-            <FaJs className="text-yellow-500 text-4xl" />
-            <p className="mt-2 text-lg font-semibold">JavaScript</p>
-          </div>
-
-          <div className="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
-            <FaReact className="text-blue-400 text-4xl" />
-            <p className="mt-2 text-lg font-semibold">React.js</p>
-          </div>
-
-          <div className="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
-            <FaNodeJs className="text-green-500 text-4xl" />
-            <p className="mt-2 text-lg font-semibold">Node.js</p>
-          </div>
-
-          <div className="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
-            <SiExpress className="text-gray-400 text-4xl" />
-            <p className="mt-2 text-lg font-semibold">Express.js</p>
-          </div>
-
-          <div className="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
-            <SiMongodb className="text-green-700 text-4xl" />
-            <p className="mt-2 text-lg font-semibold">MongoDB</p>
-          </div>
-
-          <div className="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
-            <SiTailwindcss className="text-teal-400 text-4xl" />
-            <p className="mt-2 text-lg font-semibold">Tailwind CSS</p>
-          </div>
-
-          <div className="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg hover:scale-105 transition">
-            <FaDatabase className="text-gray-500 text-4xl" />
-            <p className="mt-2 text-lg font-semibold">Database</p>
-          </div>
-
+    <>
+    <section id="skills" className="bg-[#0A192F] text-white py-16 px-8 md:px-24">
+      <h2 className="text-4xl font-bold text-white text-center mb-12">
+        Skills
+      </h2>
+      <div className="max-w-3xl mx-auto flex flex-wrap justify-center gap-6">
+        <div className="flex flex-col items-center bg-gray-800 px-6 py-4 text-lg font-medium rounded-md">
+          <FaReact className="text-[#61DBFB] text-4xl mb-2" />
+          React.js
+        </div>
+        <div className="flex flex-col items-center bg-gray-800 px-6 py-4 text-lg font-medium rounded-md">
+          <FaHtml5 className="text-[#E44D26] text-4xl mb-2" />
+          HTML5
+        </div>
+        <div className="flex flex-col items-center bg-gray-800 px-6 py-4 text-lg font-medium rounded-md">
+          <FaCss3Alt className="text-[#264de4] text-4xl mb-2" />
+          CSS3
+        </div>
+        <div className="flex flex-col items-center bg-gray-800 px-6 py-4 text-lg font-medium rounded-md">
+          <FaJs className="text-[#F7DF1E] text-4xl mb-2" />
+          JavaScript
+        </div>
+        <div className="flex flex-col items-center bg-gray-800 px-6 py-4 text-lg font-medium rounded-md">
+          <FaNodeJs className="text-[#68A063] text-4xl mb-2" />
+          Node.js
+        </div>
+        <div className="flex flex-col items-center bg-gray-800 px-6 py-4 text-lg font-medium rounded-md">
+          <SiMongodb className="text-[#4DB33D] text-4xl mb-2" />
+          MongoDB
+        </div>
+        <div className="flex flex-col items-center bg-gray-800 px-6 py-4 text-lg font-medium rounded-md">
+          <FaGitAlt className="text-[#F34F29] text-4xl mb-2" />
+          Git
         </div>
       </div>
     </section>
+    </>
+    
   );
 };
-
-export default Skills;

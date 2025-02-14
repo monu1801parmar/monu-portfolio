@@ -59,8 +59,8 @@ export const Contact = () => {
         </form>
       </div>
     </section> */}
-    <section id='contact'className="bg-[#0A192F] text-white py-16 px-8 md:px-24">
-      <h2 className="text-4xl font-bold text-center mb-12 text-[#64ffda]">
+    <section id='contactme'className="bg-[#0A192F] text-white py-16 px-8 md:px-24">
+      <h2 className="text-4xl font-bold text-center mb-12 text-white">
         Contact Me
       </h2>
 

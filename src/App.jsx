@@ -8,6 +8,8 @@ import { Footer } from './Component/Footer'
 import { Projects } from './Component/Projects'
 import { Contact } from './Component/Contact'
 import { Education } from './Component/Education'
+import { Skills } from './Component/Skills'
+import { About } from './Component/About'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +18,8 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
+      <About/>
+      <Skills/>
       <Projects/>
       <Education/>
       <Contact/>
