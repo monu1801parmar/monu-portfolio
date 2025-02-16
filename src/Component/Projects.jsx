@@ -5,71 +5,86 @@ import Bookstore_image from '../assets/HomeSs.png'
 
 export const Projects = () => {
   return (
-    <div id="projects" className="bg-[#0A192F] text-white py-12">
-    <h2 className="text-4xl font-bold text-center mb-8">Projects</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8 items-center text-center mx-auto">
-      
-      <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 mx-auto">
-        <a href="#">
-          <img className="rounded-t-lg" src={Portfolio_image} alt="" />
-        </a>
-        <div className="p-5">
-          <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Portfolio Website</h5>
-          </a>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            A personal portfolio website showcasing my projects, skills, and experience.
-          </p>
-          <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-            <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-          </a>
+  <>
+   <section id="projects" className="bg-[#0A192F] text-white py-16 px-8">
+      <h2 className="ttext-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center mb-12">
+        Projects
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+        
+        {/* Portfolio Website */}
+        <div className="bg-[#112240] rounded-xl overflow-hidden shadow-lg transform transition-transform hover:-translate-y-3">
+          <img
+            src={Portfolio_image}
+            alt="Portfolio Website"
+            className="w-full h-52 object-cover"
+          />
+          <div className="p-6">
+            <h3 className="text-2xl font-semibold text-[#64ffda] mb-4">
+              Portfolio Website
+            </h3>
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6">
+              A personal portfolio website showcasing my projects, skills, and
+              experience with a modern and responsive design.
+            </p>
+            <a
+              href="#"
+              className="inline-block text-[#64ffda] border border-[#64ffda] rounded-lg px-4 py-2 text-sm font-medium transition duration-300 hover:bg-[#64ffda] hover:text-[#0A192F]"
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+
+        {/* Bookstore Project */}
+        <div className="bg-[#112240] rounded-xl overflow-hidden shadow-lg transform transition-transform hover:-translate-y-3">
+          <img
+            src={Bookstore_image}
+            alt="Bookstore Project"
+            className="w-full h-52 object-cover"
+          />
+          <div className="p-6">
+            <h3 className="text-2xl font-semibold text-[#64ffda] mb-4">
+              Bookstore Project
+            </h3>
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6">
+              An online bookstore where users can browse, add books to the cart,
+              and purchase books securely.
+            </p>
+            <a
+              href="#"
+              className="inline-block text-[#64ffda] border border-[#64ffda] rounded-lg px-4 py-2 text-sm font-medium transition duration-300 hover:bg-[#64ffda] hover:text-[#0A192F]"
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+
+        {/* Tech Blog */}
+        <div className="bg-[#112240] rounded-xl overflow-hidden shadow-lg transform transition-transform hover:-translate-y-3">
+          <img
+            src="/docs/images/blog/image-1.jpg"
+            alt="Tech Blog"
+            className="w-full h-52 object-cover"
+          />
+          <div className="p-6">
+            <h3 className="text-2xl font-semibold text-[#64ffda] mb-4">
+              Tech Blog
+            </h3>
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-6">
+              A blog website covering the latest tech trends and updates with a
+              sleek, user-friendly interface.
+            </p>
+            <a
+              href="#"
+              className="inline-block text-[#64ffda] border border-[#64ffda] rounded-lg px-4 py-2 text-sm font-medium transition duration-300 hover:bg-[#64ffda] hover:text-[#0A192F]"
+            >
+              View Project
+            </a>
+          </div>
         </div>
       </div>
-
-      <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
-          <img className="rounded-t-lg" src={Bookstore_image} alt="" />
-        </a>
-        <div className="p-5">
-          <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bookstore Project</h5>
-          </a>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            An online bookstore where users can browse, add books to cart, and purchase books.
-          </p>
-          <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-            <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
-          <img className="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-        </a>
-        <div className="p-5">
-          <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tech Blog</h5>
-          </a>
-          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            A blog website covering the latest tech trends and updates.
-          </p>
-          <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-            <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
+    </section>
+  </>
   )
 }
